@@ -1,31 +1,27 @@
 {
-	"manifest_version": 2,
-	"name": "autoLogin",
-	"version": "1.0",
-	"description": "网站自动登录插件",
-	"icons": {
-		"19": "images/logo.png",
-		"38": "images/logo.png",
-		"128": "images/logo128.png"
-	},
+  "manifest_version": 2,
+  "name": "autoLogin",
+  "version": "1.0",
+  "description": "自动登录插件",
+  "icons": {
+    "19": "images/logo.png",
+    "38": "images/logo.png",
+    "128": "images/logo128.png"
+  },
 
-	"browser_action": {
-		"default_title": "快速登录各种网站",
-		"default_popup": "popup.html"
-	},
+  "browser_action": {
+    "default_title": "登录网站",
+    "default_popup": "popup.html"
+  },
 
-	"content_scripts": [{
-		"matches": ["*://segmentfault.com/*"],
-		"js": ["./dist/content_scripts/segmentfault.min.js"]
-	}, {
-		"matches": ["*://github.com/login*"],
-		"js": ["./dist/content_scripts/github.min.js"]
-	}, {
-		"matches": ["*://mp.weixin.qq.com/"],
-		"js": ["./src/content_scripts/mp.js"]
-	}],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/login"],
+      "js": ["./src/content_scripts/github.js"]
+    }
+  ],
 
-	"background": {
-		"scripts": []
-	}
+  "background": {
+    "scripts": []
+  }
 }

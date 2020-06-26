@@ -1,7 +1,7 @@
 {
   "name": "auto-login-chrome-extension",
   "version": "1.0.0",
-  "description": "An auto-login chrome extension from website",
+  "description": "A chrome extension to login github automatically",
   "main": "popup.js",
   "scripts": {
     "test": ""
@@ -16,12 +16,12 @@
     "auto",
     "login"
   ],
-  "author": "kyrieliu",
+  "author": "Bertram xue",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KKKyrie/autoLogin/issues"
+    "url": "https://github.com/bighuskie/autologin/issues"
   },
-  "homepage": "https://github.com/KKKyrie/autoLogin#readme",
+  "homepage": "https://github.com/bighuskie/autologin#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^2.0.0-beta.2",
